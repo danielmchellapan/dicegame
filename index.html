@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/script.js" defer></script>
-    <title>Document</title>
+    <title>DiceGame</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Dice Game</h1>
+        <div class="diceContainer">
+            <div class="dice" id="userDice-1"><img src="images/dice-1.png" alt="Dice 1"></div>
+            <div class="dice" id="userDice-2"><img src="images/dice-1.png" alt="Dice 1"></div>
+            <div class="dice" id="computerDice-1"><img src="images/dice-1.png" alt="Dice 1"></div>
+            <div class="dice" id="computerDice-2"><img src="images/dice-1.png" alt="Dice 1"></div>
+        </div>
+        <div class="scores">
+            <p>User Score: <span id="userScore">0</span></p>
+            <p>Computer Score: <span id="computerScore">0</span></p>
+        </div>
+        <button onclick="rollDice()">Roll the Dice</button>
+        <button onclick="resetGame()">Reset Game</button>
+        <div id="result" class="result"></div>
+    </div>
 </body>
 </html>
