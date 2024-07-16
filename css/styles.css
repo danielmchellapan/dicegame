@@ -67,6 +67,17 @@ button:hover
   font-weight: bold;
 }
 
+footer
+{
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 @media (max-width: 760px) {
   
 .diceContainer 
