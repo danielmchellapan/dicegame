@@ -109,6 +109,13 @@ button
   {
     font-size: 20px;
   }
+
+  footer 
+  {
+    padding: 5px 0;
+    font-size: 12px;
+}
+
 }
 
 @media (max-width: 480px) {
