@@ -1,14 +1,16 @@
 $primary-color: #4CAF50;
 $secondary-color: #FFFFFF;
 
-@mixin center-flex {
+@mixin center-flex 
+{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
+body
+{
+    
     margin: 0;
     padding: 0;
     background-color: $secondary-color;
@@ -17,24 +19,29 @@ body {
     flex-direction: column;
 }
 
-.container {
+.container 
+{
     text-align: center;
 }
 
-.diceContainer {
+.diceContainer 
+{
     @include center-flex;
     margin: 20px 0;
 
-    .dice {
+    .dice 
+    {
         margin: 0 10px;
-        img {
+        img
+        {
             width: 100px;
             height: 100px;
         }
     }
 }
 
-button {
+button 
+{
     background-color: $primary-color;
     border: none;
     color: $secondary-color;
@@ -47,18 +54,22 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    &:hover {
+    &:hover 
+    {
         background-color: darken($primary-color, 10%);
     }
 }
 
-.scores {
-    p {
+.scores 
+{
+    p 
+    {
         font-size: 20px;
     }
 }
 
-.result {
+.result 
+{
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;

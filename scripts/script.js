@@ -40,8 +40,6 @@ const computer = new Player('Computer');
 function updateDiceImages(player) {
     const dice1 = $(`#${player.name.toLowerCase()}Dice-1 img`);
     const dice2 = $(`#${player.name.toLowerCase()}Dice-2 img`);
-
-    console.log(`${player.name} rolled: ${player.currentRoll[0]}, ${player.currentRoll[1]}`);  
     
     dice1.fadeOut(200, function() {
         $(this).attr('src', diceImages[player.currentRoll[0] - 1]).fadeIn(200);

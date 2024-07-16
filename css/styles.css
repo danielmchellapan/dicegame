@@ -1,56 +1,128 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body 
+{
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+  
+.container 
+{
+  text-align: center;
+}
+  
+.diceContainer 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.diceContainer .dice 
+{
+  margin: 0 10px;
+}
+
+
+.diceContainer .dice img 
+{
+  width: 100px;
+  height: 100px;
+}
+  
+button 
+{
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+button:hover 
+{
+  background-color: #3e8e41;
+}
+  
+.scores p
+{
+  font-size: 20px;
+}
+  
+.result 
+{
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  
+.diceContainer 
+{
     flex-direction: column;
+    .dice 
+    {
+        margin: 10px 0;
+        img 
+        {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+button 
+  {
+    padding: 10px 20px;
+    font-size: 14px;
   }
-  
-  .container {
-    text-align: center;
+
+  .scores p 
+  {
+    font-size: 18px;
   }
-  
-  .diceContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  .diceContainer .dice {
-    margin: 0 10px;
-  }
-  .diceContainer .dice img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    border: none;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .scores p {
+
+  .result 
+  {
     font-size: 20px;
   }
-  
-  .result {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .dice-container 
+  {
+      .dice img 
+      {
+          width: 60px;
+          height: 60px;
+      }
   }
+
+  button 
+  {
+      padding: 8px 16px;
+      font-size: 12px;
+  }
+
+  .scores p 
+  {
+      font-size: 16px;
+  }
+
+  .result 
+  {
+      font-size: 18px;
+  }
+}
